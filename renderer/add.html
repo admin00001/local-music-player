@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+  <link rel="stylesheet" href="../node_modules//bootstrap/dist/css/bootstrap.min.css">
+  <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>本地播放器</title>
+</head>
+
+<body>
+  <div class="d-flex flex-column" style="min-height: 100vh;">
+    <h5 class="bg-light clearfix p-4">添加音乐到歌曲列表 <i class="fa fa-close float-right" id="close"></i></h5>
+
+    <div class="flex-grow-1 position-relative">
+      <div class="position-absolute p-4 w-100 h-100 overflow-auto">
+        <ul class="list-group" id="musicList">
+          <li class="list-group-item">您未选择任何文件</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-light p-4">
+      <button type="button" id="selectMusic" class="btn btn-outline-primary btn-block">
+        选择音乐
+      </button>
+
+      <button type="button" id="addMusic" class="btn btn-dark btn-block mt-4 d-none">
+        导入音乐
+      </button>
+    </div>
+  </div>
+  <script src="./js/add.js"></script>
+</body>
+
+</html>

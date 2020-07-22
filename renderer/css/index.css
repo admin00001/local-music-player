@@ -1,0 +1,23 @@
+
+.list-group-item .action-container .fa {
+  cursor: pointer;
+}
+
+.list-group-item:not(.active):hover {
+  background: #efefef;
+}
+
+body > .main {
+  padding-bottom: 150px;
+}
+.list-group-item.empty {
+  padding: 50px 0;
+  background-color: #fff;
+}
+.list-group-item.empty:hover {
+  background-color: #fff;
+}
+
+.footer{
+  background-color: #fff;
+}

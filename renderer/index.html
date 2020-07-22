@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <link rel="stylesheet" href="../node_modules//bootstrap/dist/css/bootstrap.min.css" >
+    <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <title>音乐播放器</title>
+    <!-- <link rel="shortcut icon" href="icon.ico"> -->
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h3 class="mt-4">音乐播放器 </h3>
+
+        <div class="card mt-4 ">
+          <div class="card-body">
+            <h5 class="clearfix ">歌曲列表
+              <button type="button" id="addMusicButton" class="btn btn-primary btn-sm float-right">
+                <i class="fa fa-plus"></i> 添加歌曲
+              </button>
+            </h5>
+            <ul class="list-group border-top list-group-flush mt-4" id="list"></ul>
+          </div>
+        </div>
+      </div>
+
+
+      <footer class="footer pt-4 pb-4 pl-2 pr-2 fixed-bottom bg-light">
+        <div class="progress" style="height: 5px;">
+          <div class="progress-bar" id="progress" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div id="progressStatus">0%</div>
+        <div class="container">
+          <div class="row pt-2 pb-2 ">
+            <div class="col-4" id="musicName">
+              正在播放：
+            </div>
+            <div class="col-4 text-center">
+              <div class="btn-group " role="group" aria-label="Basic example" >
+                <button type="button" class="btn rounded-circle btn-light" id="prev">
+                  <i class="fa fa-chevron-left"></i>
+                </button>
+                <button class="rounded-circle btn btn-primary ml-4 mr-4" id="playPauseBtn">
+                  <i class="fa fa-play" ></i>
+                </button>
+                <button type="button" class="btn rounded-circle btn-light" id="next">
+                  <i class="fa fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-4">
+              <span id="currentTime">00:00</span> / <span id="totalTime">00:00</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

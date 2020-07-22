@@ -1,0 +1,62 @@
+{
+  "name": "local-music-player",
+  "version": "1.0.0",
+  "description": "一个音乐播放器",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon --watch main.js --exec electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "local.music.app",
+    "productName": "音乐播放器",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "artifactName": "${productName}-${version}.${ext}"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "./build/icon/icon.ico",
+      "artifactName": "${productName}-${version}.${ext}",
+      "publisherName": "xxx"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "perMachine": false,
+      "installerIcon": "./build/icon/icon.ico",
+      "uninstallerIcon": "./build/icon/icon.ico",
+      "installerHeaderIcon": "./build/icon/icon.ico",
+      "createDesktopShortcut": true
+    },
+    "copyright": "©2020 xx公司."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.1.0",
+    "electron-builder": "^22.7.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "electron-store": "^6.0.0",
+    "uuid": "^8.2.0"
+  }
+}
