@@ -1,22 +1,23 @@
-# local-music-plaer
+# local-music-plaer 本地音乐播放器
 
-**可以参考我的博客 https://www.jianshu.com/p/58cb7dbc3b14**
+**有问题可以参考我的博客 https://www.jianshu.com/p/58cb7dbc3b14**
 
 
 ```bash
-# clone
+# 克隆
 git clone https://github.com/admin00001/local-music-player
-# Go into the repository
+# 进入目录
 cd local-music-player
-# Install dependencies
+# 安装依赖
 npm install
-# Run the app
+# 运行
 npm start
 ```
 
+
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-## Resources for Learning Electron
+##  Electron 学习资源
 
 - [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
 - [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
